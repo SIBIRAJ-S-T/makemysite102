@@ -7,7 +7,7 @@ const Chatbot = () => {
   const [input, setInput] = useState('');
 
   const genAI = new GoogleGenerativeAI(process.env.REACT_APP_API_KEY);
-  const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+  const model = genAI.getGenerativeModel({ model: 'gemini-3.5-flash' });
 
   const getUserIntent = (message) => {
     const lowerCaseMessage = message.toLowerCase();
