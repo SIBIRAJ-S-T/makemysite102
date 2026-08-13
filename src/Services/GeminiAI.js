@@ -4,7 +4,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 // Retrieve the API key from local storage
 const storedApiKey = localStorage.getItem('API_KEY');
 const genAI = new GoogleGenerativeAI(storedApiKey);
-const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+const model = genAI.getGenerativeModel({ model: "gemini-3.6-flash" });
 
 export const generateCode = async (prompt, history = '') => {
   try {
